@@ -67,7 +67,6 @@ function Video() {
         <div className='d-flex justify-content-center'>
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/2_nbKnAhPd8?si=pXGL9g6YhQjL4Efv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
         </div>
         <div>
           <p className='text-center mt-3 fs-4'>

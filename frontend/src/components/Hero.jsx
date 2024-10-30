@@ -1,7 +1,7 @@
 import React from "react";
 import banner from '../../public/assit/back.jpg'
 import doctor from  '../../public/assit/doctor.png'
-const Hero = ({ title, imageUrl }) => {
+const Hero = () => {
   
   return (
     <>
@@ -27,13 +27,8 @@ const Hero = ({ title, imageUrl }) => {
                    style={{
                      width: '100%',
                      height: '45vh',
-                     // filter:' blur(100%)',
                   }}  >
-
-                     
                      <div className='text-center  '>
-
-
                         <h1 className=' title-banner ' >مركز قصر النيل </h1>
                         <h3 className='title-banner-third'>
                            لجراحات النساء والتوليد وعلاج العقم </h3>
@@ -66,8 +61,6 @@ const Hero = ({ title, imageUrl }) => {
                      height: '35vh',
                   }} >
 
-
-
                         </div>
                         <div  style={{
                      width: '100%',
@@ -75,14 +68,11 @@ const Hero = ({ title, imageUrl }) => {
                      marginBottom:"0px",
                      overflow:"hidden"
                   }}>
-
                         <img
                   src={doctor}
-                  //    width={"100%"}
                   style={{
                      width: '100%',
-                     height: 'auto',
-                     // background:"green"
+                     // height: 'auto',
                   }}
                />
                         </div>
@@ -101,11 +91,9 @@ const Hero = ({ title, imageUrl }) => {
                   }}>
              <img
                   src={doctor}
-                  //    width={"100%"}
                   style={{
                      width: '100%',
                      height: 'auto',
-                     // background:"green"
                   }}
                />
                         </div>
