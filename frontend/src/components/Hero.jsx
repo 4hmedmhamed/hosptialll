@@ -1,6 +1,6 @@
 import React from "react";
 import banner from '../../public/assit/back.jpg'
-import doctor from  '../../public/assit/banner/doctor.png'
+import doctor from  '../../public/assit/doctor.png'
 const Hero = ({ title, imageUrl }) => {
   
   return (
