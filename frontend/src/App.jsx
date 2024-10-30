@@ -4,6 +4,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Appointment from "./Pages/Appointment";
 import AboutUs from "./Pages/AboutUs";
+import Oursrvies from "./components/Oursrvies";
+import Departments from "./components/Departments";
+import Video from "./components/Video";
+import Connect from "./components/Connect";
 import Register from "./Pages/Register";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
@@ -43,8 +47,12 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/appointment" element={<Appointment />} />
           <Route path="/about" element={<AboutUs />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/Oursrvies" element={<Oursrvies />} />
+          <Route path="/Our_advantages" element={<Departments />} />
+          <Route path="/Video" element={<Video />} />
+          <Route path="/Connect" element={<Connect />} />
+          {/* <Route path="/register" element={<Register />} /> */}
+          {/* <Route path="/login" element={<Login />} /> */}
         </Routes>
         <Footer />
         <ToastContainer position="top-center" />

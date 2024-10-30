@@ -89,65 +89,90 @@ const AppointmentForm = () => {
 
   return (
     <>
-      <div className="container form-component appointment-form">
+      <div className="container " >
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
         <h2>Appointment</h2>
-        <form onSubmit={handleAppointment}>
-          <div>
+        <form onSubmit={handleAppointment} className="">
+            <div className="row">
+              <div className="col-md-6">
+
             <input
               type="text"
               placeholder="First Name"
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
+              className="form-control"
             />
+              </div>
+              <div className="col-md-6">
+
             <input
               type="text"
               placeholder="Last Name"
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
+               className="form-control"
             />
-          </div>
-          <div>
+              </div>
+              <div className="col-md-6">
             <input
               type="text"
               placeholder="Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+               className="form-control"
             />
+              </div>
+              <div className="col-md-6">
             <input
               type="number"
               placeholder="Mobile Number"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
+               className="form-control"
             />
-          </div>
-          <div>
+              </div>
+              <div className="col-md-6">
             <input
               type="number"
               placeholder="NIC"
               value={nic}
               onChange={(e) => setNic(e.target.value)}
+               className="form-control"
             />
+              </div>
+              <div className="col-md-6">
             <input
               type="date"
               placeholder="Date of Birth"
               value={dob}
               onChange={(e) => setDob(e.target.value)}
+               className="form-control"
             />
-          </div>
-          <div>
-            <select value={gender} onChange={(e) => setGender(e.target.value)}>
+              </div>
+              <div className="col-md-6">
+
+            <select value={gender} onChange={(e) => setGender(e.target.value)} className="form-select">
               <option value="">Select Gender</option>
               <option value="Male">Male</option>
               <option value="Female">Female</option>
             </select>
+              </div>
+              <div className="col-md-6">
+                ss
             <input
               type="date"
               placeholder="Appointment Date"
               value={appointmentDate}
               onChange={(e) => setAppointmentDate(e.target.value)}
+              className="form-control"
             />
-          </div>
-          <div>
+              </div>
+          <div className="col-md-6">
             <select
               value={department}
               onChange={(e) => {
@@ -155,6 +180,7 @@ const AppointmentForm = () => {
                 setDoctorFirstName("");
                 setDoctorLastName("");
               }}
+              className="form-select"
             >
               {departmentsArray.map((depart, index) => {
                 return (
@@ -164,6 +190,9 @@ const AppointmentForm = () => {
                 );
               })}
             </select>
+          </div>
+          <div  className="col-md-6">
+
             <select
               value={`${doctorFirstName} ${doctorLastName}`}
               onChange={(e) => {
@@ -172,6 +201,7 @@ const AppointmentForm = () => {
                 setDoctorLastName(lastName);
               }}
               disabled={!department}
+              className="form-select"
             >
               <option value="">Select Doctor</option>
               {doctors
@@ -186,12 +216,16 @@ const AppointmentForm = () => {
                 ))}
             </select>
           </div>
+
+          <div>
           <textarea
             rows="10"
             value={address}
             onChange={(e) => setAddress(e.target.value)}
             placeholder="Address"
+            className="form-control"
           />
+          </div>
           <div
             style={{
               gap: "10px",
@@ -207,8 +241,10 @@ const AppointmentForm = () => {
               style={{ flex: "none", width: "25px" }}
             />
           </div>
-          <button style={{ margin: "0 auto" }}>GET APPOINTMENT</button>
+          <button className="btn btn-primary" >GET APPOINTMENT</button>
+      </div>
         </form>
+
       </div>
     </>
   );
