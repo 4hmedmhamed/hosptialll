@@ -43,7 +43,7 @@ const Departments = () => {
           مميزاتنا
         </h5>
         <div className='row border-bottom py-2'>
-          {/* <div className='col-md-4 '>
+          <div className='col-md-4 '>
             <div className='tabell mt-3 text-center  '>
               <div className='row'>
                 <div className=' col-3'>
@@ -109,7 +109,7 @@ const Departments = () => {
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
           <div className='col-md-4'>
             <div className='mt-2'>
               {/* <Image
@@ -125,7 +125,7 @@ const Departments = () => {
                />
             </div>
           </div>
-          {/* <div className='col-md-4 '>
+          <div className='col-md-4 '>
             <div className='tabell mt-3 text-center  '>
               <div className='row'>
                 <div className=' col-3'>
@@ -193,7 +193,7 @@ const Departments = () => {
             </div>
 
 
-          </div> */}
+          </div>
         </div>
         <br></br>
         <br></br>

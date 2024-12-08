@@ -4,7 +4,6 @@ import Biography from "../components/Biography";
 const AboutUs = () => {
   return (
     <>
-
       <Biography imageUrl={"/whoweare.png"} />
     </>
   );

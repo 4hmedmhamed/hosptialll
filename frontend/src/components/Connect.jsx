@@ -76,7 +76,7 @@ function Connect() {
 
 </div>
 <div>
-  < MessageForm />
+  {/* < MessageForm /> */}
 </div>
 </div>
       

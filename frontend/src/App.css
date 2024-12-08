@@ -75,6 +75,9 @@ a {
 .nav-item:hover{
   border-bottom: #f3e40b 2px solid;
 }
+.nav-item.show{
+  border-bottom: #f3e40b 2px solid;
+}
 .side-bar{
   background-color :#380751;
   /* width: 80px; */

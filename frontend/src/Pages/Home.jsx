@@ -14,7 +14,7 @@ const Home = () => {
       <Biography imageUrl={"/about.png"} />
       <Departments />
       <Questions/>
-      <MessageForm />
+      {/* <MessageForm /> */}
     </>
   );
 };
